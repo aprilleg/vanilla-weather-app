@@ -1,0 +1,47 @@
+.weather-app-border {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.datetime {
+    text-align: center;
+}
+
+.temperature-wrapper {
+    margin-top: 20px;
+    line-height: 1;
+}
+
+img {
+    height: 64px;
+    width: 64px;
+}
+
+strong {
+    font-size: 64px;
+}
+
+.units {
+    font-size: 16px;
+    position: relative;
+    top: -32px;
+}
