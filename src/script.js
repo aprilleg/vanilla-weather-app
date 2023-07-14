@@ -40,10 +40,20 @@ function displayTemperature(response) {
   icon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   icon.setAttribute("alt", response.data.weather[0].description);
 }
+function search(city) { 
+  let apiKey = "4701c6238d7532c7377eeddfdc5b837d";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
 
-let apiKey = "4701c6238d7532c7377eeddfdc5b837d";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Dubai&appid=${apiKey}&units=metric`;
+}
 
-console.log(apiUrl);
+function clickSubmit(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-input");
+  search(cityInput.value);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+search("Philippines");
+
+let form= document.querySelector("#search-form")
+form.addEventListener("submit", clickSubmit);

@@ -16,9 +16,19 @@
   <body>
     <div class="container">
       <div class="weather-app-border">
-        <h1 id="city">Philippines</h1>
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+          <input type="text" placeholder="Enter a city" autofocus="on" class="form-control" id="search-input">
+          </div>
+          <div class="col-3">
+          <input type="submit" value="Search" class="btn btn-primary">
+          </div>
+          </div>
+        </form>
+        <h1 id="city">Enter City</h1>
         <ul>
-          <li class="datetime" id="date">Friday 05:00</li>
+          <li class="datetime" id="date">Time</li>
         </ul>
         <div class="temperature-wrapper">
         <div class="row">
@@ -29,13 +39,13 @@
               id="icon"
               class="float-right"
             />
-            <span class="desc" id="description">Description</span>
+            <span class="desc" id="description"></span>
           </div>
           <div class="col-6">
-            <strong id="temperature">12</strong><span class="units">°C | <a href="#">°F</a></span>
+            <strong id="temperature"></strong><span class="units">°C | <a href="#">°F</a></span>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity">73</span>%</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind">2</span>km/h</li>
               </ul>
             </div>
