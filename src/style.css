@@ -4,6 +4,7 @@
     padding: 20px;
     border: 1px solid #dadde1;
     border-radius: 10px;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
 }
 
 h1{
@@ -11,6 +12,7 @@ h1{
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 0;
+    color: white;
 }
 ul {
     margin: 0;
@@ -24,6 +26,7 @@ li {
 }
 .datetime {
     text-align: center;
+    color: whitesmoke;
 }
 
 .temperature-wrapper {
@@ -38,14 +41,24 @@ img {
 
 strong {
     font-size: 64px;
+    text-align: center;
+    color: white;
 }
 
 .units {
     font-size: 16px;
     position: relative;
     top: -32px;
+    color: whitesmoke;
 }
 
 .desc {
     text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+li {
+    color: white;
 }
