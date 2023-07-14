@@ -10,12 +10,13 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="weather-app-border">
-        <h1>Philippines</h1>
+        <h1 id="city">Philippines</h1>
         <ul>
           <li class="datetime">Friday 05:00</li>
         </ul>
@@ -28,14 +29,14 @@
               id="icon"
               class="float-right"
             />
-            <span>Description</span>
+            <span class="desc" id="description">Description</span>
           </div>
           <div class="col-6">
-            <strong>12</strong><span class="units">°C | <a href="#">°F</a></span>
+            <strong id="temperature">12</strong><span class="units">°C | <a href="#">°F</a></span>
             <div class="col-6">
               <ul>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity">73</span>%</li>
+                <li>Wind: <span id="wind">2</span>km/h</li>
               </ul>
             </div>
           </div>

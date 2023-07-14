@@ -45,3 +45,7 @@ strong {
     position: relative;
     top: -32px;
 }
+
+.desc {
+    text-transform: capitalize;
+}
