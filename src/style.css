@@ -62,3 +62,8 @@ strong {
 li {
     color: white;
 }
+
+.opensource {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
