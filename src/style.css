@@ -40,6 +40,7 @@ strong {
 .footer {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 }
 .weather-app-border {
   max-width: 600px;
@@ -98,4 +99,21 @@ li {
   position: relative;
   right: -56px;
   margin-top: 5px;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+    color:#c471f5
+}
+
+.weather-forecast-temperatures {
+    font-size: 13px;
+}
+.weather-forecast-temperature-min {
+    opacity: 0.5;
 }
