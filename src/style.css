@@ -1,69 +1,101 @@
-.weather-app-border {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    border: 1px solid #dadde1;
-    border-radius: 10px;
-    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
+  background-image: url("https://i.pinimg.com/originals/69/ec/54/69ec54cbcf6e51f5080c68e8813992d1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-h1{
-    text-align: center;
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 0;
-    color: white;
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: black;
 }
 ul {
     margin: 0;
     padding: 0;
 }
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
-.datetime {
-    text-align: center;
-    color: whitesmoke;
-}
-
-.temperature-wrapper {
-    margin-top: 20px;
-    line-height: 1;
-}
-
 img {
-    height: 64px;
-    width: 64px;
+  height: 64px;
+  width: 64px;
 }
 
 strong {
-    font-size: 64px;
+  font-size: 56px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+.footer {
     text-align: center;
-    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.weather-app-border {
+  max-width: 600px;
+  margin: 40px auto;
+  margin-bottom: 0;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+}
+
+.datetime {
+  text-align: center;
+  margin-top: 5px;
+  color: grey;
+}
+
+.temperature-wrapper {
+  margin-top: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+
+.button {
+    background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    border: transparent;
+    width: 100px;
 }
 
 .units {
-    font-size: 16px;
-    position: relative;
-    top: -32px;
-    color: whitesmoke;
+  font-size: 16px;
+  position: relative;
+  top: -32px;
+  color: black;
 }
 
 .desc {
-    text-transform: capitalize;
-    font-size: 24px;
-    font-weight: 500;
-    color: white;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  line-height: 1;
 }
 
 li {
-    color: white;
+  color: black;
 }
 
 .opensource {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.default-info {
+  position: relative;
+  right: -56px;
+  margin-top: 5px;
 }

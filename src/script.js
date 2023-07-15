@@ -1,5 +1,9 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
+  let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let month = months[date.getMonth()];
+  let year = date.getFullYear();
+  let today = date.getDate();
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -19,7 +23,7 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${month} ${today}, ${year} | ${day} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {

@@ -15,15 +15,22 @@
   </head>
   <body>
     <div class="container">
+      <div class="wrapper">
       <div class="weather-app-border">
         <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-9">
-          <input type="text" placeholder="Enter a city" autofocus="on" class="form-control" id="search-input">
-          </div>
-          <div class="col-3">
-          <input type="submit" value="Search" class="btn btn-primary">
-          </div>
+              <input
+                type="text"
+                placeholder="Enter a city"
+                autofocus="on"
+                class="form-control"
+                id="search-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary button" />
+            </div>
           </div>
         </form>
         <h1 id="city">Enter City</h1>
@@ -31,29 +38,39 @@
           <li class="datetime" id="date">Time</li>
         </ul>
         <div class="temperature-wrapper">
-        <div class="row">
-          <div class="weather-temperature col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="clear"
-              id="icon"
-              class="float-right"
-            />
-            <span class="desc" id="description"></span>
-          </div>
-          <div class="col-6">
-            <strong id="temperature"></strong><span class="units">°C</span>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>km/h</li>
-              </ul>
+          <div class="row">
+            <div class="weather-temperature col-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="clear"
+                id="icon"
+                class="float-right"
+              />
+              <span class="desc" id="description"></span>
             </div>
-          </div>
+            <div class="col-6">
+              <strong id="temperature"></strong><span class="units">°C</span>
+              <div class="col-6">
+                <ul class="default-info">
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>km/h</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <p class="opensource"><a href="https://github.com/aprilleg/vanilla-weather-app">Open-source code</a> by Aprille Guevarra</p>
+      <div class="footer">
+        <span
+          ><a
+            href="https://github.com/aprilleg/vanilla-weather-app"
+            class="code-source"
+            target="_blank"
+            >Open-source code
+          </a></span
+        >by<span class="coder-name"> Aprille Guevarra </span>
+      </div>
+      </div>
     </div>
     <script src="src/script.js"></script>
   </body>
